@@ -1,0 +1,50 @@
+/*
+* One overarching stack, which then each menu (std::vector<MenuEntry>, where MenuEntry is an obj) is in. 
+* When I need to switch menu's I just pop/push the stack.
+* Stack -> Menu obj -> Menu Entries (obj subtype)
+*
+* TODO:
+* MenuEntry obj 
+* Menu obj 
+* Stack (can be a) linked list for menu architecture
+* Link obj -> returns next menu that it is linked to
+* Disp obj -> Text only
+* Func pointer -> takes param, sends to func when selected.
+* 
+* OTHERS:
+* Menu obj needs bool requireBack for when pressing select should/shouldn't take you back a menu
+* 
+* 
+* 
+* 
+* 
+* 
+*/
+
+class MenuEntry {
+    std::vector<const char*>*  entryTitle = "Option";
+  public:
+
+    MenuEntry() :
+      menuName("Default name")
+    {
+    }
+
+    const char* getName() {
+      return entryTitle;
+    }
+
+};
+
+class Link {
+    uint8_t nodeTo = 
+    uint8_t nodeFrom = 
+
+    public:
+
+        Link() :
+
+        {
+        }
+            
+}
